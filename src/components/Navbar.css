@@ -1,0 +1,29 @@
+.navbar {
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu {
+    display: flex; /* Cache le menu par défaut */
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-menu.is-active {
+    display: none; /* Affiche le menu quand il est actif */
+    flex-direction: column; /* Aligne les éléments en colonne sur petits écrans */
+    width: 100%; /* Prend toute la largeur */
+}
+
+@media (max-width: 840px) {
+    .navbar {
+        flex-direction: column; /* Change la direction en colonne sur petits écrans */
+    }
+
+    .navbar-burger {
+        cursor: grab;
+        
+    }
+}
+

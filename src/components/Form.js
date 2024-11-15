@@ -1,9 +1,10 @@
 import React from 'react';
- 
+import './Form.css';
+
 function Form() { 
 return (
 
-<form>
+<form className='Form'>
   
         Nom:<br></br>
         <input type="text" name="Nom" placeholder="Nom"/><br></br>
